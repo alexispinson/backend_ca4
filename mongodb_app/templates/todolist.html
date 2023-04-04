@@ -41,7 +41,7 @@
     <button id="important">Show only important</button>
     <hr>
     {% for todo in todos %}
-            <div class="todo" id="{{ todo['degree'] }}">
+            <div class="todo {{ todo['degree'] }}">
                 <p>{{ todo['content'] }} <i>({{ todo['degree']}})</i></p>
                 <form method="POST" action="{{ url_for('delete', id=todo['_id']) }}" >
                     <input type="submit" value="Delete Todo"
@@ -95,15 +95,20 @@
             {
                 important.textContent = 'Show all';
                 showall = false;
-                const Unimportant = document.getElementById('Unimportant');
-                Unimportant.style.display = 'none';
+                const Unimportant = document.getElementsByClassName('Unimportant');
+                for (var i = 0; i<Unimportant.length;i++){
+                    Unimportant.item(i).style.display = 'none';
+                }
             }
             else
             {
                 important.textContent = 'Show only important';
                 showall = true;
-                const Unimportant = document.getElementById('Unimportant');
-                Unimportant.style.display = 'block';
+                const Unimportant = document.getElementsByClassName('Unimportant');
+                for (var i = 0; i<Unimportant.length;i++){
+                    Unimportant.item(i).style.display = 'block';
+                }
+                
             }
         });
     </script>

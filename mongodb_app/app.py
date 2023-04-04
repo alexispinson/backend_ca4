@@ -9,7 +9,7 @@ app = Flask(__name__)
 app.secret_key = "testing"
 
 # define MongoDB client and collections
-client = pymongo.MongoClient("mongodb+srv://alexispinson78:0u3VJEwsAYd1A6wj@cluster0.rmmyfm.mongodb.net/?retryWrites=true&w=majority") 
+client = pymongo.MongoClient("mongodb+srv://alexispinson78:0u3VJEwsAYd1A6wj@cluster0.rmmyfmj.mongodb.net/?retryWrites=true&w=majority") 
 db = client.flask_db
 todos = db.todos
 records = db.register
