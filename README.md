@@ -14,7 +14,12 @@ But also to show only the ones which are important :
 And of course to delete them, but that was in the tutorial :
 ![alt text](https://github.com/alexispinson/backend_ca4/blob/main/readmesrc/6.png?raw=true)
 
-After that, I decided to do an authentification system :
+After that, I decided to do an authentification system. You can now register :
+![alt text](https://github.com/alexispinson/backend_ca4/blob/main/readmesrc/7.png?raw=true)
 
+Log in :
 ![alt text](https://github.com/alexispinson/backend_ca4/blob/main/readmesrc/1.png?raw=true)
+
+And log out :
+![alt text](https://github.com/alexispinson/backend_ca4/blob/main/readmesrc/8.png?raw=true)
 
